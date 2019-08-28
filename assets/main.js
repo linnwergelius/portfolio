@@ -11,10 +11,11 @@
 
 $(document).ready(function() {
 	
-$("body").removeClass("bg")	
+$("body").removeClass("bg")
+$('.sliding').delay(700).removeClass('sliding');
+
 $('.hidden').fadeIn(300).removeClass('hidden');
 $(".header p").css("transform", "translate(0, 0)")
-$('.sliding').delay(700).removeClass('sliding');
 $(".title p").css("transform", "translate(0, 0)")				
 $('.linkfade').fadeIn(1000);
 $(".about.button.inproject").addClass("back");
