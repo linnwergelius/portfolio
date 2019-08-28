@@ -1,0 +1,105 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" href="https://use.typekit.net/ahr8ghl.css">
+	<link rel="stylesheet" href="assets/reset.css">
+	<link rel="stylesheet" href="assets/mediaqueries.css">
+	
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+	 <title>About</title>
+	 
+</head>
+
+<body class="overflow">
+
+	<a href='index.html'>
+		<div class="about button tohome">
+		<p class="linkfade">Back <br>2<br>Works</p>
+	</div>
+	</a>
+	
+	<div class="header">
+		<p>ABOUT & CONTACT</p>
+	</div>
+
+	<div class="main">	
+		<div class="education">
+			<h1 class="hidden visible">EDUCATION:</h1>
+			<ul class="hidden visible">
+				<li>
+					2016–2019 <br>
+					BA of Fine Arts in Design<br>
+					Academy of Crafts and Design (HDK),Gothenburg 
+					
+				</li>
+				<li>
+					2018<br>
+					Visuelle Kommunkation BA<br>
+					ZHdK/Exchange semester
+					
+				</li>
+				<li>
+					2015<br>
+					Graphic Design <br>
+					Hellidens Folkhögskola Tidaholm 
+				</li>
+			
+				
+			</ul>
+			
+			<h1 class="hidden visible"> CONTACT: </h1>
+			<a href="https://www.instagram.com/linnwergelius/"><p class="hidden visible"> @linnwergelius</p></a>
+			
+				<p class="hidden visible">linnwergelius@gmail.com</p>
+				
+		</div>
+		
+		<div class="aboutme">
+			
+			<p class="hidden visible">
+				<span class="underline">Linn Wergelius</span><br> is a multidisciplinary <br><span class="funky">GRAPHIC DESIGNER</span> based in<br> <span class="underline">Gothenburg, Sweden.</span>
+			</p> 
+			
+			<div class="hidden visible">
+				 <div class='eyecontain'>
+				  	<div class='eye'></div>
+				  	<div class='eye'></div>
+			</div>
+			
+  			<p class="hidden visible" >
+				Looking for work and collaborations.
+			</p>
+			  
+			</div>
+	</div>
+
+
+	
+	
+	
+	
+	
+<script src="assets/main.js">	</script>
+
+<script>
+	$("body").mousemove(function(event) {
+		   var eye = $(".eye");
+		   var x = (eye.offset().left) + (eye.width() / 2);
+		   var y = (eye.offset().top) + (eye.height() / 2);
+		   var rad = Math.atan2(event.pageX - x, event.pageY - y);
+		   var rot = (rad * (180 / Math.PI) * -1) + 180;
+		   eye.css({
+		     '-webkit-transform': 'rotate(' + rot + 'deg)',
+		     '-moz-transform': 'rotate(' + rot + 'deg)',
+		     '-ms-transform': 'rotate(' + rot + 'deg)',
+		     'transform': 'rotate(' + rot + 'deg)'
+		   });
+		 });
+</script>
+		 
+
+</body>
