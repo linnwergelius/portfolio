@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: flash;
   font-style: normal;
@@ -43,6 +45,8 @@ body {
 	font-style: normal;
 	overscroll-behavior: none;
 	transition:1s;
+	cursor:default;
+	
 	
 }
 
@@ -309,9 +313,35 @@ span.cross {
 
 	}
 	
-
+	
+	
+	.main {
+		display:flex;
+		height:100%;
+		flex-direction:row;
+	   /* padding-top: 60px;*/
+		/*overflow:scroll;*/
+	}
+	
+	.main.project {
+		flex-direction:column;
+	}
+	
+	.aboutme	{
+		width:auto;
+	}
+	
+	.aboutme p {
+		font-size:4vw;
+		
+	}
+	
 	.education {
-		font-size:3vw;
+		border-right:1px solid black;
+		border-top:none;
+		order:1;
+		font-size:2vw;
+		width:auto;
 	}
 	
 	.description {
@@ -334,6 +364,8 @@ span.cross {
 } 
 
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 800px) {
 	body {font-size:20pt;}
@@ -354,20 +386,13 @@ span.cross {
 
 	}
 	
-	.main {
-		display:flex;
-		height:100%;
-		flex-direction:column;
-	   /* padding-top: 60px;*/
-		/*overflow:scroll;*/
-	}
 	
 	.education {
-		order:1;
-		font-size:3vw;
+
+		font-size:1.5vw;
 	}
 	
-	.eyecontain {display:none;}
+	.eyecontain {display:none;}*/
 	
 	
 } 
@@ -375,7 +400,7 @@ span.cross {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
 
 	/*FIXED BUTTONS*/
 
@@ -424,6 +449,10 @@ span.cross {
 		flex-direction:row;
 	   /* padding-top: 60px;*/
 		/*overflow:scroll;*/
+	}
+	
+	.main.project {
+		flex-direction:row;
 	}
 
 
