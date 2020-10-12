@@ -181,13 +181,14 @@ body.overflow {overflow:hidden;}
 }
 .education h1 {
 	
-	font-size:4vw;;
+	font-size:1em;
 	line-height:1.1em;
 	padding-bottom:4.5px;
 }
 
 li {
 	margin-bottom:1em;
+	font-size:20px;
 	
 	
 }
